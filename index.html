@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Relief & Emergency Volunteer Network</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #251ca8; /* Emergency Red */
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #121c7a;
+            display: flex;
+            justify-content: center;
+            padding: 12px;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Content Cards */
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: #3d1ca8;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .card ul, .card ol {
+            margin-left: 20px;
+            color: #555;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .form-group input, 
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #331ca8;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #2c127a;
+        }
+
+        .note {
+            font-size: 0.85rem;
+            color: #777;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3a1ca8;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Relief Link</h1>
+        <p>Community Emergency Response Network</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#requirements">Requirements</a>
+        <a href="#process">Response Process</a>
+        <a href="#register">Register</a>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about" class="card">
+            <h2>About Disaster Relief</h2>
+            <p>Disaster relief and emergency networks provide rapid support and coordination during natural disasters, extreme weather events, and public health emergencies. Volunteers play a critical role in distributing food, setting up temporary shelters, and offering logistical support to affected communities.</p>
+            <p>Timely response and well-organized volunteer management help mitigate risks, ensure safety, and accelerate community recovery efforts.</p>
+        </section>
+
+        <!-- Requirements Section -->
+        <section id="requirements" class="card">
+            <h2>Volunteer Requirements</h2>
+            <ul>
+                <li>Generally, volunteers should be 18 years or older for field deployment.</li>
+                <li>Volunteers must be in good physical health for physical or outdoor duties.</li>
+                <li>Prior training in first aid, driving, or logistics is beneficial but not mandatory.</li>
+                <li>Remote/online assistance options are available for phone helpline and digital operations.</li>
+                <li>Emergency response coordinators determine final team assignments.</li>
+            </ul>
+        </section>
+
+        <!-- Response Process Section -->
+        <section id="process" class="card">
+            <h2>Response Process</h2>
+            <ol>
+                <li>Register in advance as an emergency volunteer.</li>
+                <li>Receive emergency alert notifications during regional crises.</li>
+                <li>Confirm your availability and deployment area.</li>
+                <li>Assist in supply packing, distribution, or field operations under guidance.</li>
+                <li>Participate in post-relief debriefing and community updates.</li>
+            </ol>
+        </section>
+
+        <!-- Registration Form Section -->
+        <section id="register" class="card">
+            <h2>Volunteer Registration</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="skill">Primary Skill:</label>
+                    <select id="skill">
+                        <option>First Aid & Medical Support</option>
+                        <option>Driving & Logistics</option>
+                        <option>Food & Supply Distribution</option>
+                        <option>Remote Helpline & Data Entry</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="availability">Availability Status:</label>
+                    <select id="availability">
+                        <option>On-Call Emergency</option>
+                        <option>Full-Time Field Volunteer</option>
+                        <option>Part-Time / Weekends Only</option>
+                    </select>
+                </div>
+
+                <button type="submit">Register as Volunteer</button>
+            </form>
+            <p class="note">Demo form only; it does not store or submit personal details.</p>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by: YOUR NAME | First Year CSE</p>
+        <p>Contact: relieflink@2510.com</p>
+    </footer>
+
+</body>
+</html>\
